@@ -1,3 +1,5 @@
+## Made by itsmezion and revantTNK
+
 import tkinter
 import tkinter.ttk as ttk
 from urllib.request import urlretrieve
