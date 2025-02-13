@@ -2,6 +2,8 @@ from urllib.request import urlretrieve
 import requests as r
 from tqdm import tqdm
 
+print("Welcome to NCERTTBDL!")
+
 baseUrl = "https://ncert.nic.in/textbook/pdf/"
 
 def dl(url, filename):
