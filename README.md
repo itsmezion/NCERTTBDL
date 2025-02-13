@@ -1,5 +1,5 @@
 # NCERTTBDL
-Utility to download NCERT textbooks, but better.
+National Council of Education Research and Training Text Book DownLoader - A utility to download NCERT textbooks, but better.
 
 # Development Process
 The idea for this project was provided by Revant. He made the original CLI application and Zion modified it and converted it into a TKinter application. This entire process took only 2 days.
