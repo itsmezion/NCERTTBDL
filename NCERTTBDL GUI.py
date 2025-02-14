@@ -6,7 +6,7 @@ from urllib.request import urlretrieve
 
 root = tkinter.Tk()
 root.title('NCERT Textbook Downloader')
-root.geometry('500x200')
+root.geometry('500x250')
 root.configure(bg="beige")
 
 def download(url, filename):
@@ -18,8 +18,8 @@ def selected(e):
     if subjectSelector.get() == "Maths":
         chapterSelector.config(value=gr1MathChap)
         chapterSelector.current(0)
-    if subjectSelector.get() == "English":
-        chapterSelector.config(value=gr1EngChap)
+    if subjectSelector.get() == "Science":
+        chapterSelector.config(value=gr1SciChap)
         chapterSelector.current(0)
         
 def chosen():
@@ -28,55 +28,63 @@ def chosen():
         case "Maths":
             match chapterSelector.get():
                 case "Chapter 1":
-                    download(baseUrl + "aejm101.pdf", "JM CH-1.pdf")
+                    download(baseUrl + "hemh101.pdf", "MATH CH-1.pdf")
                 case "Chapter 2":
-                    download(baseUrl + "aejm102.pdf", "JM CH-2.pdf")
+                    download(baseUrl + "hemh102.pdf", "MATH CH-2.pdf")
                 case "Chapter 3":
-                    download(baseUrl + "aejm103.pdf", "JM CH-3.pdf")
+                    download(baseUrl + "hemh103.pdf", "MATH CH-3.pdf")
                 case "Chapter 4":
-                    download(baseUrl + "aejm104.pdf", "JM CH-4.pdf")
+                    download(baseUrl + "hemh104.pdf", "MATH CH-4.pdf")
                 case "Chapter 5":
-                    download(baseUrl + "aejm105.pdf", "JM CH-5.pdf")
+                    download(baseUrl + "hemh105.pdf", "MATH CH-5.pdf")
                 case "Chapter 6":
-                    download(baseUrl + "aejm106.pdf", "JM CH-6.pdf")
+                    download(baseUrl + "hemh106.pdf", "MATH CH-6.pdf")
                 case "Chapter 7":
-                    download(baseUrl + "aejm107.pdf", "JM CH-7.pdf")
+                    download(baseUrl + "hemh107.pdf", "MATH CH-7.pdf")
                 case "Chapter 8":
-                    download(baseUrl + "aejm108.pdf", "JM CH-8.pdf")
+                    download(baseUrl + "hemh108.pdf", "MATH CH-8.pdf")
                 case "Chapter 9":
-                    download(baseUrl + "aejm109.pdf", "JM CH-9.pdf")
+                    download(baseUrl + "hemh109.pdf", "MATH CH-9.pdf")
                 case "Chapter 10":
-                    download(baseUrl + "aejm110.pdf", "JM CH-10.pdf")
+                    download(baseUrl + "hemh110.pdf", "MATH CH-10.pdf")
                 case "Chapter 11":
-                    download(baseUrl + "aejm111.pdf", "JM CH-11.pdf")
+                    download(baseUrl + "hemh111.pdf", "MATH CH-11.pdf")
                 case "Chapter 12":
-                    download(baseUrl + "aejm112.pdf", "JM CH-12.pdf")
+                    download(baseUrl + "hemh112.pdf", "MATH CH-12.pdf")
                 case "Chapter 13":
-                    download(baseUrl + "aejm113.pdf", "JM CH-13.pdf")
-        case "English":
+                    download(baseUrl + "hemh113.pdf", "MATH CH-13.pdf")
+        case "Science":
             match chapterSelector.get():
                 case "Chapter 1":
-                    download(baseUrl + "aemr101.pdf", "Mridang CH-1.pdf")
+                    download(baseUrl + "hesc101.pdf", "SCIENCE CH-1.pdf")
                 case "Chapter 2":
-                    download(baseUrl + "aemr102.pdf", "Mridang CH-2.pdf")
+                    download(baseUrl + "hesc102.pdf", "SCIENCE CH-2.pdf")
                 case "Chapter 3":
-                    download(baseUrl + "aemr103.pdf", "Mridang CH-3.pdf")
+                    download(baseUrl + "hesc103.pdf", "SCIENCE CH-3.pdf")
                 case "Chapter 4":
-                    download(baseUrl + "aemr104.pdf", "Mridang CH-4.pdf")
+                    download(baseUrl + "hesc104.pdf", "SCIENCE CH-4.pdf")
                 case "Chapter 5":
-                    download(baseUrl + "aemr105.pdf", "Mridang CH-5.pdf")
+                    download(baseUrl + "hesc105.pdf", "SCIENCE CH-5.pdf")
                 case "Chapter 6":
-                    download(baseUrl + "aemr106.pdf", "Mridang CH-6.pdf")
+                    download(baseUrl + "hesc106.pdf", "SCIENCE CH-6.pdf")
                 case "Chapter 7":
-                    download(baseUrl + "aemr107.pdf", "Mridang CH-7.pdf")
+                    download(baseUrl + "hesc107.pdf", "SCIENCE CH-7.pdf")
                 case "Chapter 8":
-                    download(baseUrl + "aemr108.pdf", "Mridang CH-8.pdf")
+                    download(baseUrl + "hesc108.pdf", "SCIENCE CH-8.pdf")
                 case "Chapter 9":
-                    download(baseUrl + "aemr109.pdf", "Mridang CH-9.pdf")
+                    download(baseUrl + "hesc109.pdf", "SCIENCE CH-9.pdf")
+                case "Chapter 10":
+                    download(baseUrl + "hesc110.pdf", "SCIENCE CH-10.pdf")
+                case "Chapter 11":
+                    download(baseUrl + "hesc111.pdf", "SCIENCE CH-11.pdf")
+                case "Chapter 12":
+                    download(baseUrl + "hesc112.pdf", "SCIENCE CH-12.pdf")
+                case "Chapter 13":
+                    download(baseUrl + "hesc113.pdf", "SCIENCE CH-13.pdf")
             
 
-subjects = ["English", "Maths"]
-gr1EngChap = ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9"]
+subjects = ["Science", "Maths"]
+gr1SciChap = ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10", "Chapter 11", "Chapter 12", "Chapter 13"]
 gr1MathChap = ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10", "Chapter 11", "Chapter 12", "Chapter 13"]
     
 welcome = tkinter.Label(root, text="Download every chapter, every textbook, here.")
